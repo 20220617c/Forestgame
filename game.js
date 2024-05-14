@@ -533,7 +533,7 @@ const textNodes = [
   },
   {
     id: 36,
-    text: 'The lone traveller surcumbs to maddness in the isolation of the forest. Perhaps try making a friend?',
+    text: 'The lone traveller surcumbs to maddness in the isolation of the forest.',
     options: [
       {
         text:'I would like a friend',
