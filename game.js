@@ -324,6 +324,224 @@ const textNodes = [
       },
     ]
   },
+  {
+    id: 20,
+    text: 'Good. Shall we continue exporing?',
+    options: [
+      {
+        text:'yes',
+        nextText: 22
+      },
+      {
+        text:'no',
+        nextText: 6
+      },
+    ]
+  },
+  {
+    id: 22,
+    text: '....',
+    options: [
+      {
+        text:'....',
+        nextText: 23
+      },
+    ]
+  },
+  {
+    id: 23,
+    text: '...',
+    options: [
+      {
+        text:'....',
+        nextText: 24
+      },
+    ]
+  },
+  {
+    id: 24,
+    text: '..',
+    options: [
+      {
+        text:'....',
+        nextText: 25
+      },
+    ]
+  },
+  {
+    id: 25,
+    text: '.',
+    options: [
+      {
+        text:'Hello?',
+        nextText: 26
+      },
+    ]
+  },
+  {
+    id: 26,
+    text: '.',
+    options: [
+      {
+        text:'Are you there?',
+        nextText: 27
+      },
+    ]
+  },
+  {
+    id: 27,
+    text: '.',
+    options: [
+      {
+        text:'Which way should we go?',
+        nextText: 28
+      },
+    ]
+  },
+  {
+    id: 28,
+    text: '.',
+    options: [
+      {
+        text:'Did you leave me behind?',
+        nextText: 29
+      },
+    ]
+  },
+  {
+    id: 29,
+    text: '.',
+    options: [
+      {
+        text:'I need to make a choice.',
+        nextText: 30
+      },
+    ]
+  },
+  {
+    id: 30,
+    text: '.',
+    options: [
+      {
+        text:'North',
+        nextText: 31
+      },
+      {
+        text:'South',
+        nextText: 31
+      },
+      {
+        text:'East',
+        nextText: 31
+      },
+      {
+        text:'West',
+        nextText: 31
+      },
+    ]
+  },
+  {
+    id: 31,
+    text: '.',
+    options: [
+      {
+        text:'East',
+        nextText: 32
+      },
+      {
+        text:'North',
+        nextText: 32
+      },
+      {
+        text:'West',
+        nextText: 32
+      },
+      {
+        text:'South',
+        nextText: 32
+      },
+    ]
+  },
+  {
+    id: 32,
+    text: '.',
+    options: [
+      {
+        text:'East',
+        nextText: 33
+      },
+      {
+        text:'West',
+        nextText: 33
+      },
+      {
+        text:'South',
+        nextText: 33
+      },
+      {
+        text:'North',
+        nextText: 33
+      },
+    ]
+  },
+  {
+    id: 33,
+    text: '.',
+    options: [
+      {
+        text:'South',
+        nextText: 34
+      },
+      {
+        text:'West',
+        nextText: 34
+      },
+      {
+        text:'North',
+        nextText: 34
+      },
+      {
+        text:'East',
+        nextText: 34
+      },
+    ]
+  },
+  {
+    id: 34,
+    text: '.',
+    options: [
+      {
+        text:'I dont think im going home',
+        nextText: 36
+      },
+      {
+        text:'Home',
+        requiredState: (currentState) => currentState.compass,
+        nextText: 35
+      },
+    ]
+  },
+  {
+    id: 35,
+    text: 'The creature sends its farewells. May you return home safely',
+    options: [
+      {
+        text:'Farewell.',
+        nextText: -1
+      },
+    ]
+  },
+  {
+    id: 36,
+    text: 'The lone traveller surcumbs to maddness in the isolation of the forest. Perhaps try making a friend?',
+    options: [
+      {
+        text:'I would like a friend',
+        nextText: -1
+      },
+    ]
+  },
+
 ]
 
-startGame()
+startGame() 
